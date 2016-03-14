@@ -24,30 +24,30 @@
   SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#import "OEWIISystemResponder.h"
-#import "OEWIISystemResponderClient.h"
+#import "OEWiiSystemResponder.h"
+#import "OEWiiSystemResponderClient.h"
 
-@implementation OEWIISystemResponder
+@implementation OEWiiSystemResponder
 @dynamic client;
 
 + (Protocol *)gameSystemResponderClientProtocol;
 {
-    return @protocol(OEWIISystemResponderClient);
+    return @protocol(OEWiiSystemResponderClient);
 }
 
 - (void)changeAnalogEmulatorKey:(OESystemKey *)aKey value:(CGFloat)value
 {
-    [[self client] didMoveWIIJoystickDirection:(OEWIIButton)[aKey key] withValue:value forPlayer:aKey.player];
+    [[self client] didMoveWiiJoystickDirection:(OEWiiButton)[aKey key] withValue:value forPlayer:aKey.player];
 }
 
 - (void)pressEmulatorKey:(OESystemKey *)aKey
 {
-    [[self client] didPushWIIButton:(OEWIIButton)[aKey key] forPlayer:[aKey player]];
+    [[self client] didPushWiiButton:(OEWiiButton)[aKey key] forPlayer:[aKey player]];
 }
 
 - (void)releaseEmulatorKey:(OESystemKey *)aKey
 {
-    [[self client] didReleaseWIIButton:(OEWIIButton)[aKey key] forPlayer:[aKey player]];
+    [[self client] didReleaseWiiButton:(OEWiiButton)[aKey key] forPlayer:[aKey player]];
 }
 
 @end

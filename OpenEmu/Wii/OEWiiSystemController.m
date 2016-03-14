@@ -24,13 +24,13 @@
   SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#import "OEWIISystemController.h"
-#import "OEWIISystemResponder.h"
-#import "OEWIISystemResponderClient.h"
+#import "OEWiiSystemController.h"
+#import "OEWiiSystemResponder.h"
+#import "OEWiiSystemResponderClient.h"
 
-@implementation OEWIISystemController
+@implementation OEWiiSystemController
 
-// Read header to detect GameCube ISO, GCM & CISO
+// Read header to detect Wii ISO, WBFS & CISO
 - (OECanHandleState)canHandleFile:(NSString *)path
 {
     BOOL handleFileExtension = [super canHandleFileExtension:[path pathExtension]];
@@ -49,15 +49,15 @@
 
         // Handle ciso file and set the offset for the Magicword in compressed iso
         if([[[path pathExtension] lowercaseString] isEqualToString:@"ciso"])
-            [dataFile seekToFileOffset: 0x801C];
+            [dataFile seekToFileOffset: 0x8018];
         else
-            [dataFile seekToFileOffset: 0x1C];
+            [dataFile seekToFileOffset: 0x018];
 
-        dataBuffer = [dataFile readDataOfLength:4]; // Gamecube Magicword 0xC2339F3D
+        dataBuffer = [dataFile readDataOfLength:4]; // Wii Magicword 0x5D1C9EA3
         NSString *dataString = [[NSString alloc] initWithData:dataBuffer encoding:NSMacOSRomanStringEncoding];
         NSLog(@"'%@'", dataString);
 
-        if([dataString isEqualToString:@"¬3ü="])
+        if([dataString isEqualToString:@"]\x1cû£"])
             canHandleFile = OECanHandleYes;
 
         [dataFile closeFile];

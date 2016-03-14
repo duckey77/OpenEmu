@@ -25,11 +25,11 @@
  */
 
 #import <OpenEmuSystem/OpenEmuSystem.h>
-#import "OEWIISystemResponderClient.h"
+#import "OEWiiSystemResponderClient.h"
 
 OE_EXPORTED_CLASS
-@interface OEWIISystemResponder : OESystemResponder
+@interface OEWiiSystemResponder : OESystemResponder
 
-@property(nonatomic, weak) id<OEWIISystemResponderClient> client;
+@property(nonatomic, weak) id<OEWiiSystemResponderClient> client;
 
 @end

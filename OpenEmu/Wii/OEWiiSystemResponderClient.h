@@ -69,7 +69,8 @@ typedef enum _OEWiiButton
     OEWiiClassicButtonZr,
     OEWiiClassicButtonStart,
     OEWiiClassicButtonSelect,
-    OEGCButtonCount
+    OEWiiClassicButtonHome,
+    OEWiiButtonCount
 } OEWiiButton;
 
 @protocol OEWiiSystemResponderClient <OESystemResponderClient, NSObject>
