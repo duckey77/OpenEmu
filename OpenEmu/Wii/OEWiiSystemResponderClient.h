@@ -78,5 +78,7 @@ typedef enum _OEWiiButton
 - (oneway void)didMoveWiiJoystickDirection:(OEWiiButton)button withValue:(CGFloat)value forPlayer:(NSUInteger)player;
 - (oneway void)didPushWiiButton:(OEWiiButton)button forPlayer:(NSUInteger)player;
 - (oneway void)didReleaseWiiButton:(OEWiiButton)button forPlayer:(NSUInteger)player;
+- (oneway void)didMoveWiiAccelerometer:(OEWiiButton)button withValue:(CGFloat)valueX withValue:(CGFloat)valueY withValue:(CGFloat)valueZ forPlayer:(NSUInteger)player;
+- (oneway void)didMoveWiiIR:(OEWiiButton)button withValue:(CGFloat)X1 withValue:(CGFloat)Y1 withValue:(CGFloat)X2 withValue:(CGFloat)Y2 withValue:(CGFloat)X3 withValue:(CGFloat)Y3 withValue:(CGFloat)X4 withValue:(CGFloat)Y4 forPlayer:(NSUInteger)player;
 
 @end

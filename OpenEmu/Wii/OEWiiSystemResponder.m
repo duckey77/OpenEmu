@@ -40,6 +40,16 @@
     [[self client] didMoveWiiJoystickDirection:(OEWiiButton)[aKey key] withValue:value forPlayer:aKey.player];
 }
 
+- (void)changeAccelerometerEmulatorValue:(OESystemKey *)aKey valueX:(CGFloat)valueX valueY:(CGFloat)valueY valueZ:(CGFloat)valueZ
+{
+    [[self client] didMoveWiiAccelerometer:(OEWiiButton)[aKey key] withValue:valueX withValue:valueY withValue:valueZ forPlayer:aKey.player];
+}
+
+- (void)changeIREmulatorValue:(OESystemKey *)aKey X1:(CGFloat)X1 Y1:(CGFloat)Y1 X2:(CGFloat)X2 Y2:(CGFloat)Y2 X3:(CGFloat)X3 Y3:(CGFloat)Y3 X4:(CGFloat)X4 Y4:(CGFloat)Y4
+{
+      [[self client] didMoveWiiIR:(OEWiiButton)[aKey key] withValue:X1 withValue:Y1  withValue:X2 withValue:Y2  withValue:X3 withValue:Y3  withValue:X4 withValue:Y4 forPlayer:aKey.player];
+}
+
 - (void)pressEmulatorKey:(OESystemKey *)aKey
 {
     [[self client] didPushWiiButton:(OEWiiButton)[aKey key] forPlayer:[aKey player]];

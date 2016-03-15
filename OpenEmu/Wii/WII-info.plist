@@ -143,6 +143,12 @@
 				<key>OEControlListKeyNameKey</key>
 				<string>OEWiiNunchukButtonZ</string>
 			</dict>
+            <dict>
+                <key>OEControlListKeyLabelKey</key>
+                <string>Accelerometer</string>
+                <key>OEControlListKeyNameKey</key>
+                <string>OEWiiNunchukAccelerometer</string>
+            </dict>
 		</array>
 		<array>
 			<string>Classic Controller</string>
