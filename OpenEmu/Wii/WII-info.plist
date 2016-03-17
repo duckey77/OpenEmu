@@ -100,18 +100,6 @@
 				<key>OEControlListKeyNameKey</key>
 				<string>OEWiiMoteButtonHome</string>
 			</dict>
-            <dict>
-                <key>OEControlListKeyLabelKey</key>
-                <string>Accelerometer</string>
-                <key>OEControlListKeyNameKey</key>
-                <string>OEWiiMoteAccelerometer</string>
-            </dict>
-            <dict>
-                <key>OEControlListKeyLabelKey</key>
-                <string>IR</string>
-                <key>OEControlListKeyNameKey</key>
-                <string>OEWiiMoteIR</string>
-            </dict>
 		</array>
 		<array>
 			<string>Nunchuk</string>
@@ -155,12 +143,6 @@
 				<key>OEControlListKeyNameKey</key>
 				<string>OEWiiNunchukButtonZ</string>
 			</dict>
-            <dict>
-                <key>OEControlListKeyLabelKey</key>
-                <string>Accelerometer</string>
-                <key>OEControlListKeyNameKey</key>
-                <string>OEWiiNunchukAccelerometer</string>
-            </dict>
 		</array>
 		<array>
 			<string>Classic Controller</string>
@@ -408,8 +390,6 @@
 		<string>OEWiiMoteButton2</string>
 		<string>OEWiiMoteButtonPlus</string>
 		<string>OEWiiMoteButtonMinus</string>
-        <string>OEWiiMoteAccelerometer</string>
-        <string>OEWiiMoteIR</string>
 		<string>OEWiiMoteButtonHome</string>
 		<string>OEWiiNunchukAnalogUp</string>
 		<string>OEWiiNunchukAnalogDown</string>
@@ -417,7 +397,6 @@
 		<string>OEWiiNunchukAnalogRight</string>
 		<string>OEWiiNunchukButtonC</string>
 		<string>OEWiiNunchukButtonZ</string>
-        <string>OEWiiNunchukAccelerometer</string>
 		<string>OEWiiClassicButtonUp</string>
 		<string>OEWiiClassicButtonDown</string>
 		<string>OEWiiClassicButtonLeft</string>
