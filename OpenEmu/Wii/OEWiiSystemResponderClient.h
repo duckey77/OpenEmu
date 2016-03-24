@@ -73,12 +73,34 @@ typedef enum _OEWiiButton
     OEWiiButtonCount
 } OEWiiButton;
 
+typedef enum _OEWiiAccelerometer
+{
+    OEWiiMote,
+    OEWiiNunchuk
+} OEWiiAccelerometer;
+
+typedef enum _OEWiimoteExtension
+{
+    OEWiimoteExtensionNotConnected,
+    OEWiimoteExtensionNunchuck,
+    OEWiimoteExtensionClassicController,
+    OEWiimoteExtensionWiiUProController,
+    OEWiimoteExtensionFightingStick,
+} OEWiimoteExtension;
+
+typedef struct _wiimoteIRinfo
+{
+    CGFloat dX[4];
+    CGFloat dY[4];
+    CGFloat dSize[4];
+} wiimoteIRinfo;
+
 @protocol OEWiiSystemResponderClient <OESystemResponderClient, NSObject>
 
 - (oneway void)didMoveWiiJoystickDirection:(OEWiiButton)button withValue:(CGFloat)value forPlayer:(NSUInteger)player;
 - (oneway void)didPushWiiButton:(OEWiiButton)button forPlayer:(NSUInteger)player;
 - (oneway void)didReleaseWiiButton:(OEWiiButton)button forPlayer:(NSUInteger)player;
-- (oneway void)didMoveWiiAccelerometer:(OEWiiButton)button withValue:(CGFloat)valueX withValue:(CGFloat)valueY withValue:(CGFloat)valueZ forPlayer:(NSUInteger)player;
-- (oneway void)didMoveWiiIR:(OEWiiButton)button withValue:(CGFloat)X1 withValue:(CGFloat)Y1 withValue:(CGFloat)X2 withValue:(CGFloat)Y2 withValue:(CGFloat)X3 withValue:(CGFloat)Y3 withValue:(CGFloat)X4 withValue:(CGFloat)Y4 forPlayer:(NSUInteger)player;
-
+- (oneway void)didMoveWiiAccelerometer:(OEWiiAccelerometer)accelerometer withValue:(CGFloat)valueX withValue:(CGFloat)valueY withValue:(CGFloat)valueZ forPlayer:(NSUInteger)player;
+- (oneway void)didMoveWiiIR:(OEWiiButton)button IRinfo:(wiimoteIRinfo)IRinfo forPlayer:(NSUInteger)player;
+- (oneway void)didChangeWiiExtension:(OEWiimoteExtension)extensionnType forPlayer:(NSUInteger) player;
 @end
