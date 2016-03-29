@@ -88,12 +88,12 @@ typedef enum _OEWiimoteExtension
     OEWiimoteExtensionFightingStick,
 } OEWiimoteExtension;
 
-typedef struct _wiimoteIRinfo
+typedef struct _OEwiimoteIRinfo
 {
     CGFloat dX[4];
     CGFloat dY[4];
     CGFloat dSize[4];
-} wiimoteIRinfo;
+} OEwiimoteIRinfo;
 
 @protocol OEWiiSystemResponderClient <OESystemResponderClient, NSObject>
 
@@ -101,6 +101,6 @@ typedef struct _wiimoteIRinfo
 - (oneway void)didPushWiiButton:(OEWiiButton)button forPlayer:(NSUInteger)player;
 - (oneway void)didReleaseWiiButton:(OEWiiButton)button forPlayer:(NSUInteger)player;
 - (oneway void)didMoveWiiAccelerometer:(OEWiiAccelerometer)accelerometer withValue:(CGFloat)valueX withValue:(CGFloat)valueY withValue:(CGFloat)valueZ forPlayer:(NSUInteger)player;
-- (oneway void)didMoveWiiIR:(OEWiiButton)button IRinfo:(wiimoteIRinfo)IRinfo forPlayer:(NSUInteger)player;
+- (oneway void)didMoveWiiIR:(OEWiiButton)button IRinfo:(OEwiimoteIRinfo)IRinfo forPlayer:(NSUInteger)player;
 - (oneway void)didChangeWiiExtension:(OEWiimoteExtension)extensionnType forPlayer:(NSUInteger) player;
 @end

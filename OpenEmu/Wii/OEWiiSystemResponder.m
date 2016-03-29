@@ -52,7 +52,7 @@
     [[self client] didChangeWiiExtension:(OEWiimoteExtension)extensionType forPlayer:aKey.player];
 }
 
-- (void)changeIREmulatorValue:(OESystemKey *)aKey IRinfo:(wiimoteIRinfo)IRinfo
+- (void)changeIREmulatorValue:(OESystemKey *)aKey IRinfo:(OEwiimoteIRinfo)IRinfo
 {
     [[self client] didMoveWiiIR:(OEWiiButton)aKey IRinfo:IRinfo forPlayer:aKey.player];
 }
