@@ -98,6 +98,7 @@
 				94EBBCFB183F42CE00743756 /* CopyFiles */,
 			);
 			dependencies = (
+				3E05FB201CAB2AD400EC5456 /* PBXTargetDependency */,
 				87FBC0AA1C07A23400AECF5A /* PBXTargetDependency */,
 				87FBC0881BFC77E300AECF5A /* PBXTargetDependency */,
 				3DB744CD1BD8BB0300C23E74 /* PBXTargetDependency */,
@@ -210,6 +211,14 @@
 		3DB744CB1BD8BACD00C23E74 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3DB744931BD8B9EC00C23E74 /* InfoPlist.strings */; };
 		3DB744CE1BD8BB0B00C23E74 /* PlayStation 2.oesystemplugin in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3DB744BA1BD8BA9E00C23E74 /* PlayStation 2.oesystemplugin */; };
 		3DFAB00D144644D4005EF0C3 /* OEGameShader.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BA788FE0FF9C95A007CE5DB /* OEGameShader.m */; };
+		3E05FB0A1CAB296800EC5456 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6711810136368330034379A /* Cocoa.framework */; };
+		3E05FB0B1CAB296800EC5456 /* OpenEmuSystem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6D120C417112E1300E868A8 /* OpenEmuSystem.framework */; };
+		3E05FB191CAB2A0A00EC5456 /* Wii.oesystemplugin in Copy System Plugins to App Plugins */ = {isa = PBXBuildFile; fileRef = 3E05FB171CAB296800EC5456 /* Wii.oesystemplugin */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3E05FB1A1CAB2A4A00EC5456 /* OEWiiSystemController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E05FAED1CAB28B700EC5456 /* OEWiiSystemController.m */; };
+		3E05FB1B1CAB2A4A00EC5456 /* OEWiiSystemResponder.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E05FAEF1CAB28B700EC5456 /* OEWiiSystemResponder.m */; };
+		3E05FB1C1CAB2A9500EC5456 /* Controller-Mappings.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3E05FAF11CAB28C900EC5456 /* Controller-Mappings.plist */; };
+		3E05FB1D1CAB2A9500EC5456 /* Controller-Preferences.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3E05FAF21CAB28C900EC5456 /* Controller-Preferences.plist */; };
+		3E05FB1E1CAB2A9500EC5456 /* Keyboard-Mappings.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3E05FAF31CAB28C900EC5456 /* Keyboard-Mappings.plist */; };
 		4FC6C54519AD7C4D00231545 /* controller_colecovision@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FC6C54019AD7BBB00231545 /* controller_colecovision@2x.png */; };
 		4FC6C54619AD7C5B00231545 /* controller_colecovision_mask@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FC6C53F19AD7BBB00231545 /* controller_colecovision_mask@2x.png */; };
 		53439A8C13B92C4A005C0CC8 /* OELibraryDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 53439A8B13B92C4A005C0CC8 /* OELibraryDatabase.m */; };
@@ -901,8 +910,6 @@
 		C6096192179B461C00239067 /* OEXPCGameCoreManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C6096191179B461C00239067 /* OEXPCGameCoreManager.m */; };
 		C609619A179B6E3F00239067 /* OpenEmuXPCHelperApp.m in Sources */ = {isa = PBXBuildFile; fileRef = C6096199179B6E3F00239067 /* OpenEmuXPCHelperApp.m */; };
 		C609619B179B74DE00239067 /* OESystemPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = C6289C31135B215B00EEE97C /* OESystemPlugin.m */; };
-		C609619E179B8E1100239067 /* OEDOGameCoreManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C609619D179B8E1000239067 /* OEDOGameCoreManager.m */; };
-		C60961A1179BA70600239067 /* OpenEmuDOHelperApp.m in Sources */ = {isa = PBXBuildFile; fileRef = C60961A0179BA70600239067 /* OpenEmuDOHelperApp.m */; };
 		C60961A4179C4A1C00239067 /* OEThreadGameCoreManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C60961A3179C4A1B00239067 /* OEThreadGameCoreManager.m */; };
 		C60961A7179C4BD000239067 /* OEThreadProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = C60961A6179C4BD000239067 /* OEThreadProxy.m */; };
 		C6252DA814E71D0500350A13 /* controller_fc.png in Resources */ = {isa = PBXBuildFile; fileRef = C6252DA914E71D0500350A13 /* controller_fc.png */; };
@@ -1096,6 +1103,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 3DB744A51BD8BA9E00C23E74;
 			remoteInfo = "PlayStation 2";
+		};
+		3E05FB1F1CAB2AD400EC5456 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3E05FB051CAB296800EC5456;
+			remoteInfo = Wii;
 		};
 		820EB7621483FBEF008EC398 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -1484,6 +1498,7 @@
 			dstPath = Systems;
 			dstSubfolderSpec = 13;
 			files = (
+				3E05FB191CAB2A0A00EC5456 /* Wii.oesystemplugin in Copy System Plugins to App Plugins */,
 				87BD9E331C2A679B006722DF /* WonderSwan.oesystemplugin in Copy System Plugins to App Plugins */,
 				87BD9E321C2A6788006722DF /* Vectrex.oesystemplugin in Copy System Plugins to App Plugins */,
 				87BD9E311C2A6774006722DF /* PC Engine CD.oesystemplugin in Copy System Plugins to App Plugins */,
@@ -1681,7 +1696,6 @@
 		1BEF2A7411682A330090F72B /* OpenEmuHelperApp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = OpenEmuHelperApp.m; sourceTree = "<group>"; };
 		1BEF2A9411682A530090F72B /* OpenEmuHelperApp */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = OpenEmuHelperApp; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BEF2AC311682A9D0090F72B /* IOSurface.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOSurface.framework; path = System/Library/Frameworks/IOSurface.framework; sourceTree = SDKROOT; };
-		1BEF2C4711684AE90090F72B /* OEDOGameCoreHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OEDOGameCoreHelper.h; sourceTree = "<group>"; };
 		1BEF2D13116855690090F72B /* OETaskWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OETaskWrapper.h; sourceTree = "<group>"; };
 		1BEF2D14116855690090F72B /* OETaskWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OETaskWrapper.m; sourceTree = "<group>"; };
 		1E2F3DB910DEAB4C0019AA84 /* OEVersionMigrationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OEVersionMigrationController.h; sourceTree = "<group>"; };
@@ -1758,6 +1772,16 @@
 		3DB744A31BD8BA2F00C23E74 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = "PlayStation 2/it.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		3DB744A41BD8BA3900C23E74 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = "PlayStation 2/pt.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		3DB744BA1BD8BA9E00C23E74 /* PlayStation 2.oesystemplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PlayStation 2.oesystemplugin"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E05FAEC1CAB28B700EC5456 /* OEWiiSystemController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = OEWiiSystemController.h; path = Wii/OEWiiSystemController.h; sourceTree = "<group>"; };
+		3E05FAED1CAB28B700EC5456 /* OEWiiSystemController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = OEWiiSystemController.m; path = Wii/OEWiiSystemController.m; sourceTree = "<group>"; };
+		3E05FAEE1CAB28B700EC5456 /* OEWiiSystemResponder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = OEWiiSystemResponder.h; path = Wii/OEWiiSystemResponder.h; sourceTree = "<group>"; };
+		3E05FAEF1CAB28B700EC5456 /* OEWiiSystemResponder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = OEWiiSystemResponder.m; path = Wii/OEWiiSystemResponder.m; sourceTree = "<group>"; };
+		3E05FAF01CAB28B700EC5456 /* OEWiiSystemResponderClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = OEWiiSystemResponderClient.h; path = Wii/OEWiiSystemResponderClient.h; sourceTree = "<group>"; };
+		3E05FAF11CAB28C900EC5456 /* Controller-Mappings.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Controller-Mappings.plist"; path = "Wii/Controller-Mappings.plist"; sourceTree = "<group>"; };
+		3E05FAF21CAB28C900EC5456 /* Controller-Preferences.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Controller-Preferences.plist"; path = "Wii/Controller-Preferences.plist"; sourceTree = "<group>"; };
+		3E05FAF31CAB28C900EC5456 /* Keyboard-Mappings.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Keyboard-Mappings.plist"; path = "Wii/Keyboard-Mappings.plist"; sourceTree = "<group>"; };
+		3E05FAF41CAB28C900EC5456 /* WII-info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "WII-info.plist"; path = "Wii/WII-info.plist"; sourceTree = "<group>"; };
+		3E05FB171CAB296800EC5456 /* Wii.oesystemplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Wii.oesystemplugin; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E35119B1C35DA8E0063E8CA /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/OEMigrationWindowController.strings; sourceTree = "<group>"; };
 		3E35119C1C35DA8E0063E8CA /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/OELibraryGamesViewController.strings; sourceTree = "<group>"; };
 		3E35119D1C35DA8E0063E8CA /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/OEPrefControlsController.strings; sourceTree = "<group>"; };
@@ -2935,10 +2959,6 @@
 		C6096191179B461C00239067 /* OEXPCGameCoreManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OEXPCGameCoreManager.m; sourceTree = "<group>"; };
 		C6096198179B6E3F00239067 /* OpenEmuXPCHelperApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenEmuXPCHelperApp.h; sourceTree = "<group>"; };
 		C6096199179B6E3F00239067 /* OpenEmuXPCHelperApp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenEmuXPCHelperApp.m; sourceTree = "<group>"; };
-		C609619C179B8E1000239067 /* OEDOGameCoreManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OEDOGameCoreManager.h; sourceTree = "<group>"; };
-		C609619D179B8E1000239067 /* OEDOGameCoreManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OEDOGameCoreManager.m; sourceTree = "<group>"; };
-		C609619F179BA70600239067 /* OpenEmuDOHelperApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenEmuDOHelperApp.h; sourceTree = "<group>"; };
-		C60961A0179BA70600239067 /* OpenEmuDOHelperApp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenEmuDOHelperApp.m; sourceTree = "<group>"; };
 		C60961A2179C4A1B00239067 /* OEThreadGameCoreManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OEThreadGameCoreManager.h; sourceTree = "<group>"; };
 		C60961A3179C4A1B00239067 /* OEThreadGameCoreManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OEThreadGameCoreManager.m; sourceTree = "<group>"; };
 		C60961A5179C4BD000239067 /* OEThreadProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OEThreadProxy.h; sourceTree = "<group>"; };
@@ -3213,6 +3233,15 @@
 			files = (
 				3DB744AA1BD8BA9E00C23E74 /* Cocoa.framework in Frameworks */,
 				3DB744AB1BD8BA9E00C23E74 /* OpenEmuSystem.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E05FB091CAB296800EC5456 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E05FB0A1CAB296800EC5456 /* Cocoa.framework in Frameworks */,
+				3E05FB0B1CAB296800EC5456 /* OpenEmuSystem.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3764,6 +3793,7 @@
 				3DB744BA1BD8BA9E00C23E74 /* PlayStation 2.oesystemplugin */,
 				87FBC06D1BFC70FE00AECF5A /* Commodore 64.oesystemplugin */,
 				87FBC08E1C0790B400AECF5A /* Atari 8bit.oesystemplugin */,
+				3E05FB171CAB296800EC5456 /* Wii.oesystemplugin */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -3808,8 +3838,6 @@
 				C6AC9D371190C5E60083DDFD /* OpenEmuHelperAppMain.m */,
 				1BEF2A7311682A330090F72B /* OpenEmuHelperApp.h */,
 				1BEF2A7411682A330090F72B /* OpenEmuHelperApp.m */,
-				C609619F179BA70600239067 /* OpenEmuDOHelperApp.h */,
-				C60961A0179BA70600239067 /* OpenEmuDOHelperApp.m */,
 				C6096198179B6E3F00239067 /* OpenEmuXPCHelperApp.h */,
 				C6096199179B6E3F00239067 /* OpenEmuXPCHelperApp.m */,
 			);
@@ -4083,6 +4111,30 @@
 				3DB744871BD8B9DE00C23E74 /* psx_library.png */,
 				3DB744881BD8B9DE00C23E74 /* psx_library@2x.png */,
 				3DB744931BD8B9EC00C23E74 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3E05FAEA1CAB288A00EC5456 /* Wii */ = {
+			isa = PBXGroup;
+			children = (
+				3E05FAEC1CAB28B700EC5456 /* OEWiiSystemController.h */,
+				3E05FAED1CAB28B700EC5456 /* OEWiiSystemController.m */,
+				3E05FAEE1CAB28B700EC5456 /* OEWiiSystemResponder.h */,
+				3E05FAEF1CAB28B700EC5456 /* OEWiiSystemResponder.m */,
+				3E05FAF01CAB28B700EC5456 /* OEWiiSystemResponderClient.h */,
+				3E05FAEB1CAB289300EC5456 /* Supporting Files */,
+			);
+			name = Wii;
+			sourceTree = "<group>";
+		};
+		3E05FAEB1CAB289300EC5456 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3E05FAF11CAB28C900EC5456 /* Controller-Mappings.plist */,
+				3E05FAF21CAB28C900EC5456 /* Controller-Preferences.plist */,
+				3E05FAF31CAB28C900EC5456 /* Keyboard-Mappings.plist */,
+				3E05FAF41CAB28C900EC5456 /* WII-info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -4414,8 +4466,6 @@
 				C6AC9D4B1190C9AE0083DDFD /* OEGameCoreManager.h */,
 				C6AC9D4C1190C9AE0083DDFD /* OEGameCoreManager.m */,
 				C6BF6BC717CAF09F004A8841 /* OEGameCoreManager_Internal.h */,
-				C609619C179B8E1000239067 /* OEDOGameCoreManager.h */,
-				C609619D179B8E1000239067 /* OEDOGameCoreManager.m */,
 				C60961A2179C4A1B00239067 /* OEThreadGameCoreManager.h */,
 				C60961A3179C4A1B00239067 /* OEThreadGameCoreManager.m */,
 				C6096190179B461C00239067 /* OEXPCGameCoreManager.h */,
@@ -5817,7 +5867,6 @@
 			children = (
 				C60238E8179510C600F4AF6C /* OEGameCoreHelper.h */,
 				C609618F179B278C00239067 /* OEXPCGameCoreHelper.h */,
-				1BEF2C4711684AE90090F72B /* OEDOGameCoreHelper.h */,
 			);
 			name = "Game Core Helper Protocols";
 			sourceTree = "<group>";
@@ -6027,6 +6076,7 @@
 		C67118201363687A0034379A /* System Plugins */ = {
 			isa = PBXGroup;
 			children = (
+				3E05FAEA1CAB288A00EC5456 /* Wii */,
 				943F99B51707DF3700270E89 /* 3DO */,
 				945E42FD1517F2B500057D08 /* Arcade */,
 				94A224A51707543600098DA0 /* Atari 2600 */,
@@ -6316,6 +6366,23 @@
 			name = "PlayStation 2";
 			productName = PlayStation;
 			productReference = 3DB744BA1BD8BA9E00C23E74 /* PlayStation 2.oesystemplugin */;
+			productType = "com.apple.product-type.bundle";
+		};
+		3E05FB051CAB296800EC5456 /* Wii */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E05FB141CAB296800EC5456 /* Build configuration list for PBXNativeTarget "Wii" */;
+			buildPhases = (
+				3E05FB061CAB296800EC5456 /* Sources */,
+				3E05FB091CAB296800EC5456 /* Frameworks */,
+				3E05FB0C1CAB296800EC5456 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Wii;
+			productName = Wii;
+			productReference = 3E05FB171CAB296800EC5456 /* Wii.oesystemplugin */;
 			productType = "com.apple.product-type.bundle";
 		};
 		820EB7391483F9A2008EC398 /* NeoGeoPocket */ = {
@@ -7104,6 +7171,7 @@
 				9479664E15EDE645004316AB /* Update Build Version */,
 				94EBBCD7183F422500743756 /* Build & Copy Experimental SystemPlugins */,
 				94C51FBC1847077700206E6F /* Set Experimental Appcast URLs */,
+				3E05FB051CAB296800EC5456 /* Wii */,
 			);
 		};
 /* End PBXProject section */
@@ -7176,6 +7244,16 @@
 				3DB744C91BD8BACD00C23E74 /* psx_library.png in Resources */,
 				3DB744CA1BD8BACD00C23E74 /* psx_library@2x.png in Resources */,
 				3DB744CB1BD8BACD00C23E74 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E05FB0C1CAB296800EC5456 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E05FB1C1CAB2A9500EC5456 /* Controller-Mappings.plist in Resources */,
+				3E05FB1D1CAB2A9500EC5456 /* Controller-Preferences.plist in Resources */,
+				3E05FB1E1CAB2A9500EC5456 /* Keyboard-Mappings.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -7960,7 +8038,6 @@
 				C6AC9D391190C6490083DDFD /* OpenEmuHelperAppMain.m in Sources */,
 				828BF57F1669F99600759F10 /* OEUtilities.m in Sources */,
 				C609619A179B6E3F00239067 /* OpenEmuXPCHelperApp.m in Sources */,
-				C60961A1179BA70600239067 /* OpenEmuDOHelperApp.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -7989,6 +8066,15 @@
 			files = (
 				3DB744BD1BD8BAB200C23E74 /* OEPS2SystemController.m in Sources */,
 				3DB744BF1BD8BAB200C23E74 /* OEPS2SystemResponder.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E05FB061CAB296800EC5456 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E05FB1A1CAB2A4A00EC5456 /* OEWiiSystemController.m in Sources */,
+				3E05FB1B1CAB2A4A00EC5456 /* OEWiiSystemResponder.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -8231,7 +8317,6 @@
 				94A4E992179F9D0400AD8C7D /* OEDBScreenshotsMedia.m in Sources */,
 				94A4E996179FAB9F00AD8C7D /* OEMediaViewController.m in Sources */,
 				C6096192179B461C00239067 /* OEXPCGameCoreManager.m in Sources */,
-				C609619E179B8E1100239067 /* OEDOGameCoreManager.m in Sources */,
 				83E89274197471F8004D4489 /* OEHomebrewCoverView.m in Sources */,
 				C60961A4179C4A1C00239067 /* OEThreadGameCoreManager.m in Sources */,
 				C60961A7179C4BD000239067 /* OEThreadProxy.m in Sources */,
@@ -8551,6 +8636,11 @@
 			isa = PBXTargetDependency;
 			target = 3DB744A51BD8BA9E00C23E74 /* PlayStation 2 */;
 			targetProxy = 3DB744CC1BD8BB0300C23E74 /* PBXContainerItemProxy */;
+		};
+		3E05FB201CAB2AD400EC5456 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3E05FB051CAB296800EC5456 /* Wii */;
+			targetProxy = 3E05FB1F1CAB2AD400EC5456 /* PBXContainerItemProxy */;
 		};
 		820EB7631483FBEF008EC398 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -9853,6 +9943,47 @@
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				INFOPLIST_FILE = "PlayStation 2/PlayStation2-Info.plist";
+				INSTALL_PATH = "\"$USER_LIBRARY_DIR/Application Support/OpenEmu/Systems\"";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.openemu.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = oesystemplugin;
+			};
+			name = Release;
+		};
+		3E05FB151CAB296800EC5456 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "WII/WII-Info.plist";
+				INSTALL_PATH = "\"$USER_LIBRARY_DIR/Application Support/OpenEmu/Systems\"";
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.openemu.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = oesystemplugin;
+			};
+			name = Debug;
+		};
+		3E05FB161CAB296800EC5456 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				INFOPLIST_FILE = "WII/WII-Info.plist";
 				INSTALL_PATH = "\"$USER_LIBRARY_DIR/Application Support/OpenEmu/Systems\"";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.openemu.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -11419,6 +11550,7 @@
 				GCC_PREFIX_HEADER = OpenEmu_Prefix.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
+					CG_SUPPORT,
 					SYPHON_SUPPORT,
 					"SUPPORTS_LIBRARY_REGISTRATION=1",
 				);
@@ -11459,6 +11591,7 @@
 				GCC_PREFIX_HEADER = OpenEmu_Prefix.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
+					CG_SUPPORT,
 					SYPHON_SUPPORT,
 					"SUPPORTS_LIBRARY_REGISTRATION=1",
 				);
@@ -11958,6 +12091,15 @@
 			buildConfigurations = (
 				3DB744B81BD8BA9E00C23E74 /* Debug */,
 				3DB744B91BD8BA9E00C23E74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3E05FB141CAB296800EC5456 /* Build configuration list for PBXNativeTarget "Wii" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E05FB151CAB296800EC5456 /* Debug */,
+				3E05FB161CAB296800EC5456 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
