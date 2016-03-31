@@ -439,6 +439,7 @@
 {
     DLog(@"%@", _gameAudio);
     [_gameAudio setVolume:volume];
+    [_gameCore setVolume:volume];
 }
 
 - (void)setPauseEmulation:(BOOL)paused
