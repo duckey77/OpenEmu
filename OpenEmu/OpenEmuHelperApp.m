@@ -145,11 +145,12 @@
 
 - (void)setupProcessPollingTimer
 {
-    _pollingTimer = [NSTimer scheduledTimerWithTimeInterval:1.0
+    _pollingTimer = [NSTimer scheduledTimerWithTimeInterval:5
                                                      target:self
                                                    selector:@selector(pollParentProcess)
                                                    userInfo:nil
                                                     repeats:YES];
+    _pollingTimer.tolerance = 1;
 }
 
 - (void)pollParentProcess
@@ -430,7 +431,7 @@
 
 - (BOOL)isEmulationPaused
 {
-    return _gameCore.rate == 0;
+    return _gameCore.isEmulationPaused;
 }
 
 #pragma mark - OEGameCoreHelper methods
@@ -679,6 +680,16 @@
     [_gameRenderer didRenderFrameOnAlternateThread];
 }
 
+- (void)resumeFPSLimiting
+{
+    [_gameRenderer resumeFPSLimiting];
+}
+
+- (void)suspendFPSLimiting
+{
+    [_gameRenderer suspendFPSLimiting];
+}
+
 - (BOOL)enableVSync
 {
     return _enableVSync;
@@ -696,6 +707,16 @@
 {
     [_gameAudio stopAudio];
     [_gameAudio startAudio];
+}
+
+- (void)pauseAudio
+{
+    [_gameAudio pauseAudio];
+}
+
+- (void)resumeAudio
+{
+    [_gameAudio resumeAudio];
 }
 
 #pragma mark - OEGlobalEventsHandler
