@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:Mupen64Plus-Core/Mupen64Plus.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:dolphin/Dolphin-Core.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "container:OpenEmu/OpenEmu.xcodeproj">
    </FileRef>
    <FileRef
@@ -39,9 +45,6 @@
    </FileRef>
    <FileRef
       location = "group:Mednafen/Mednafen.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:Mupen64Plus/Mupen64Plus.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:NeoPop/NeoPop.xcodeproj">
