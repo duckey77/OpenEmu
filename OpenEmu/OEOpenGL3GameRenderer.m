@@ -300,7 +300,7 @@
         // Wait for the rendering thread to complete this frame.
         // Most cores with rendering threads don't seem to handle timing themselves
         // - they're probably relying on Vsync.
-        if (_isFPSLimiting) dispatch_semaphore_wait(_executeThreadCanProceedSemaphore, DISPATCH_TIME_FOREVER);
+        if (_isFPSLimiting) dispatch_semaphore_wait(_executeThreadCanProceedSemaphore, dispatch_time(0, NSEC_PER_SEC));
 
         // Don't do any other work.
         // NOTE: if we start doing other GL stuff here (like filtering moves into this GL context)
@@ -331,7 +331,7 @@
         dispatch_semaphore_signal(_executeThreadCanProceedSemaphore);
 
         // Wait to be allowed to start next frame.
-        dispatch_semaphore_wait(_renderingThreadCanProceedSemaphore, DISPATCH_TIME_FOREVER);
+        dispatch_semaphore_wait(_renderingThreadCanProceedSemaphore, dispatch_time(0, NSEC_PER_SEC));
     }
 }
 

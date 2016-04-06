@@ -295,6 +295,15 @@
 				<string>OEWiiClassicButtonHome</string>
 			</dict>
 		</array>
+		<array>
+			<string>Special Buttons</string>
+			<dict>
+				<key>OEControlListKeyLabelKey</key>
+				<string>Change Extension</string>
+				<key>OEControlListKeyNameKey</key>
+				<string>OEWiiChangeExtension</string>
+			</dict>
+		</array>
 	</array>
 	<key>OEControlTypesKey</key>
 	<dict>
@@ -377,6 +386,7 @@
 		<string>iso</string>
 		<string>wbfs</string>
 		<string>ciso</string>
+		<string>wad</string>
 	</array>
 	<key>OEGenericControlNamesKey</key>
 	<array>
@@ -420,6 +430,7 @@
 		<string>OEWiiClassicButtonStart</string>
 		<string>OEWiiClassicButtonSelect</string>
 		<string>OEWiiClassicButtonHome</string>
+		<string>OEWiiChangeExtension</string>
 	</array>
 	<key>OENumberOfPlayersKey</key>
 	<integer>4</integer>
