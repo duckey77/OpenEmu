@@ -38,7 +38,7 @@
 
     if(handleFileExtension)
     {
-        // Handle gcm file and return early
+        // Handle wbfs file and return early
         if([[[path pathExtension] lowercaseString] isEqualToString:@"wbfs"])
             return OECanHandleYes;
 
