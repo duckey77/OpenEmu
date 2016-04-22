@@ -85,6 +85,9 @@ typedef enum _OEWiimoteExtension
     OEWiimoteExtensionNotConnected,
     OEWiimoteExtensionNunchuck,
     OEWiimoteExtensionClassicController,
+    OEWiimoteExtensionGuitar,
+    OEWiimoteExtensionDrums,
+    OEWiimoteExtensionTurntable,
     OEWiimoteExtensionWiiUProController,
     OEWiimoteExtensionFightingStick,
 } OEWiimoteExtension;
@@ -101,6 +104,7 @@ typedef struct _OEwiimoteIRinfo
 - (oneway void)didMoveWiiJoystickDirection:(OEWiiButton)button withValue:(CGFloat)value forPlayer:(NSUInteger)player;
 - (oneway void)didPushWiiButton:(OEWiiButton)button forPlayer:(NSUInteger)player;
 - (oneway void)didReleaseWiiButton:(OEWiiButton)button forPlayer:(NSUInteger)player;
+
 - (oneway void)didMoveWiiAccelerometer:(OEWiiAccelerometer)accelerometer withValue:(CGFloat)valueX withValue:(CGFloat)valueY withValue:(CGFloat)valueZ forPlayer:(NSUInteger)player;
 - (oneway void)didMoveWiiIR:(OEWiiButton)button IRinfo:(OEwiimoteIRinfo)IRinfo forPlayer:(NSUInteger)player;
 - (oneway void)didChangeWiiExtension:(OEWiimoteExtension)extensionnType forPlayer:(NSUInteger) player;
