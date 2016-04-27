@@ -85,9 +85,6 @@ typedef enum _OEWiimoteExtension
     OEWiimoteExtensionNotConnected,
     OEWiimoteExtensionNunchuck,
     OEWiimoteExtensionClassicController,
-    OEWiimoteExtensionGuitar,
-    OEWiimoteExtensionDrums,
-    OEWiimoteExtensionTurntable,
     OEWiimoteExtensionWiiUProController,
     OEWiimoteExtensionFightingStick,
 } OEWiimoteExtension;
