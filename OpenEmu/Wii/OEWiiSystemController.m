@@ -42,6 +42,10 @@
         if([[[path pathExtension] lowercaseString] isEqualToString:@"wbfs"])
             return OECanHandleYes;
 
+        // Handle wad file and return early
+        if([[[path pathExtension] lowercaseString] isEqualToString:@"wad"])
+            return OECanHandleYes;
+
         NSFileHandle *dataFile;
         NSData *dataBuffer;
 
